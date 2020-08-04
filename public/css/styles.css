@@ -17,6 +17,7 @@ body {
   background: #15161e;
   width: 100%;
   padding: 15px;
+  position: fixed;
 }
 
 .navbar:after{
@@ -54,6 +55,12 @@ body {
   line-height: 50px;
   font-size: 15px;
   padding: 10px 15px;
+  transition: 1s;
+}
+
+.navbar ul li a:hover {
+  background: #242730;
+  
 }
 
 .icon, .btnNav {
@@ -96,7 +103,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #1e212b;
-  color: wheat;
+  color: white;
   text-align: center;
   padding: 30px;
 }
