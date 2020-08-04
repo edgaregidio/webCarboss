@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center  ;
+}
+
+.navbar {
+  background: #15161e;
+  width: 100%;
+  padding: 15px;
+}
+
+.navbar:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.logo {
+  float: left;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  padding-left: 100px;
+}
+
+.navbar ul{
+  float: right;
+  list-style: none;
+  margin-right: 100px;
+  position: relative;
+}
+
+.navbar ul li{
+  display: inline-block;
+  margin: 0 5px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+
+.icon, .btnNav {
+  display: none;
+}
+
+#items-wrapper {
+  width: 100%;
+}
+
+#items  {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.item{
+  flex: none;
+
+  scroll-snap-align: start;
+  pointer-events: none;
+}
+
+#items img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.container {
+  width: 70%;
+  padding: 50px;
+}
+
+.whoare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e212b;
+  color: wheat;
+  text-align: center;
+  padding: 30px;
+}
+
+.whoare h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.whoare p {
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+
+
+@media all and (max-width: 968px) {
+
+  .navbar .logo {
+    text-align: center;
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .navbar ul {
+    margin-right: 0px;
+    float: left;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+
+}
