@@ -10,6 +10,7 @@
 body {
   display: grid;
   place-items: center  ;
+  background: black;
 }
 
 .navbar {
@@ -106,9 +107,55 @@ body {
 }
 
 .whoare p {
-  margin-top: 15px;
+  margin-top: 25px;
   font-weight: 300;
 }
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  
+  background-image: url(/public/img/carservices.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  filter: alpha(opacity=60);
+  color: white;
+}
+
+.services .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .header-service {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services .header-service img {
+  width: 60px;
+}
+
+.services .header-service h1 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.services .header-service p {
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+
 
 
 
@@ -148,6 +195,17 @@ body {
 
   [id^=btn]:checked + ul{
     display: block;
+  }
+
+  .container {
+    width: 90%;
+  }
+  .whoare h1 {
+    font-size: 35px;
+  }
+  
+  .whoare p {
+    font-size: 25px;
   }
 
 }
