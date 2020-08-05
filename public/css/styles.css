@@ -273,7 +273,7 @@ body {
 }
 
 .body-services {
-  margin-top: 50px;
+  margin-top: 70px;
   width: 100%;
   height: auto;
 
@@ -293,11 +293,20 @@ body {
 .card-services {
   background: #1e212b;
   width: 100%;
+  max-width: 250px;
   min-height: 300px ;
   padding: 30px;
+  cursor: pointer;
+  transition: 0.8s;
 
   box-shadow:  2px 10px 10px #15161e;
 }
+
+.card-services:hover{
+  background: #34363a;
+}
+
+
 .card-services .line {
   background: white;
   width: 80%;
@@ -320,11 +329,19 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
+  max-width: 200px;
+  min-width: 190px;
   height: auto;
   margin-top: -30px;
+  cursor: pointer;
 
   padding: 8px;
+  transition: 0.5s;
   background: #2e323c;
+}
+
+.card-bottom-services:hover {
+  background: #4e4cc4;
 }
 .card-bottom-services p {
   color: #FFF;
