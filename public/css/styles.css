@@ -413,10 +413,69 @@ body {
 .carousel-social img {
   width: 250px;
   margin: 45px 15px;
-
 }
 
+.products {
+  background: #282828;
+  width: 100%;
+}
 
+.products .row {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: row;
+}
+
+.products .row .body-products{
+  padding: 100px;
+  color: #71ce1c;
+}
+.products .row .body-products img{
+  margin-bottom: 15px;
+}
+.products .row .body-products h1 {
+  color: #71ce1c;
+  text-transform: uppercase;
+}
+.products .row .body-products p {
+  color: white;
+  margin-top: 25px;
+}
+.products .row .car-boss {
+  background: url(../img/carroproducts.jpg) no-repeat center center;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.products .row .car-boss:hover {
+  opacity: 0.5;
+}
+
+.products .micro {
+  background: url(../img/carroproducts2.jpg) no-repeat center center;
+  width: 100%;
+  height: 450px;
+  color: white;
+}
+
+.products .micro .card-micro {
+  background: red;
+  height: 350px;
+  width: 30%;
+  float: right;
+  margin: 50px 50px;
+}
+
+.products .micro .card-micro h1 {
+  font-size: 15px;
+}
+.products .micro .card-micro h2 {
+  font-size: 15px;
+  float: right;
+}
+.products .micro .card-micro p {
+}
 
 
 @media all and (max-width: 968px) {
@@ -490,6 +549,11 @@ body {
   }
 
   .body-services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-social {
     display: flex;
     flex-direction: column;
   }
