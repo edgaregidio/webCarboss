@@ -415,18 +415,14 @@ body {
 }
 
 .products {
-  display: flex;
   background: #282828;
+  height: auto;
   width: 100%;
-}
+  display: grid;
 
-/* .products .row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0;
-  flex-direction: row;
-} */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 
 .products .body-products {
   padding: 70px;
@@ -448,15 +444,15 @@ body {
 .products .car-boss {
   background: url(../img/carroproducts.jpg) no-repeat center center;
   width: 100%;
-  max-width: 50%;
   object-fit: cover;
   transition: 0.3s;
-
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 .products .car-boss:hover {
   opacity: 0.5;
 }
@@ -641,6 +637,11 @@ body {
     flex-direction: column;
   }
 
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+
   .social {
     height: auto;
   }
@@ -653,16 +654,6 @@ body {
     display: flex;
     flex-direction: column;
   }
-
-  .products {
-    
-  }
-
-  .products .body-products {
-    
-  }
-
-
 
   .micro .card-micro {
     display: flex;
