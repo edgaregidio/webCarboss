@@ -67,31 +67,28 @@ body {
   display: none;
 }
 
-#items-wrapper {
-  width: 100%;
-}
-
-#items  {
+.containt {
   display: flex;
-
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-}
-.item{
-  flex: none;
-
-  scroll-snap-align: start;
-  pointer-events: none;
-}
-
-#items img {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
   width: 100%;
-  height: 100%;
-
-  object-fit: cover;
+  height: 100vh;
+  
+  background: url(../img/foto1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+.items h1{
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 500;
+}
+
 
 .container {
   width: 70%;
