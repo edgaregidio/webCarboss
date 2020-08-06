@@ -28,11 +28,11 @@ body {
 
 .logo {
   float: left;
-  color: white;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   padding-left: 100px;
+  margin-top: 10px;
 }
 
 .navbar ul{
@@ -60,7 +60,6 @@ body {
 
 .navbar ul li a:hover {
   background: #242730;
-  
 }
 
 .icon, .btnNav {
