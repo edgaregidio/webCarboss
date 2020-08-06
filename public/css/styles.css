@@ -635,15 +635,15 @@ body {
 @media (max-width: 968px) {
   .navbar .logo {
     text-align: center;
-    padding-left: 30px;
+    padding-left: 3px;
     width: 100%;
   }
   .icon {
     display: block;
     color: white;
     position: absolute;
-    right: 40px;
-    line-height: 70px;
+    right: 25px;
+    line-height: 55px;
     font-size: 25px;
     cursor: pointer;
   }
@@ -728,11 +728,15 @@ body {
   /* ALTERAÇÕES */
   .carousel-social {
     display: flex;
-    width: auto !important;
+    width: 250px !important;
+    margin-right: 25px;
+    margin-left: 25px;
+    
   }
 
   .carousel-social img{
     width: 100%;
+    
   }
   /* FIM */
 
