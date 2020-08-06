@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 body {
-  display: grid;
-  place-items: center  ;
   background: black;
 }
 
@@ -20,8 +18,8 @@ body {
   position: fixed;
 }
 
-.navbar:after{
-  content: '';
+.navbar:after {
+  content: "";
   clear: both;
   display: table;
 }
@@ -35,14 +33,14 @@ body {
   margin-top: 10px;
 }
 
-.navbar ul{
+.navbar ul {
   float: right;
   list-style: none;
   margin-right: 100px;
   position: relative;
 }
 
-.navbar ul li{
+.navbar ul li {
   display: inline-block;
   margin: 0 5px;
   font-weight: 300;
@@ -62,7 +60,8 @@ body {
   background: #242730;
 }
 
-.icon, .btnNav {
+.icon,
+.btnNav {
   display: none;
 }
 
@@ -71,10 +70,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   width: 100%;
   height: 100vh;
-  
+
   background: url(../img/foto1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -82,12 +81,11 @@ body {
   background-size: cover;
 }
 
-.items h1{
+.items h1 {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 500;
 }
-
 
 .container {
   width: 70%;
@@ -120,7 +118,7 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
-  
+
   background-image: url(/public/img/carservices2.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -164,7 +162,7 @@ body {
   flex-direction: row;
 }
 
-.card-plans .row .col{
+.card-plans .row .col {
   display: flex;
   flex-direction: column;
   margin: 0 25px;
@@ -203,10 +201,10 @@ body {
   text-align: center;
 }
 
-.icons2{
+.icons2 {
   color: #ffc834;
 }
-.icons3{
+.icons3 {
   color: #d64523;
 }
 
@@ -221,7 +219,7 @@ body {
 }
 
 .card-boss p {
-  color: #767a88 ;
+  color: #767a88;
   margin-top: 15px;
 }
 .card-boss .card-body {
@@ -245,7 +243,7 @@ body {
   display: flex;
   justify-content: center;
 
-  background-image: linear-gradient(#272727,#272727,#17191f,#17191f,#17191f,#272727, #272727);
+  background-image: linear-gradient(#272727, #272727, #17191f, #17191f, #17191f, #272727, #272727);
   color: white;
   width: 100%;
   height: auto;
@@ -280,7 +278,7 @@ body {
   grid-gap: 25px;
 }
 
-.body-services > div{
+.body-services > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,18 +288,17 @@ body {
   background: #1e212b;
   width: 100%;
   max-width: 250px;
-  min-height: 300px ;
+  min-height: 300px;
   padding: 30px;
   cursor: pointer;
   transition: 0.8s;
 
-  box-shadow:  2px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.card-services:hover{
+.card-services:hover {
   background: #34363a;
 }
-
 
 .card-services .line {
   background: white;
@@ -340,19 +337,19 @@ body {
   background: #4e4cc4;
 }
 .card-bottom-services p {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
 }
 .card-bottom-services h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-weight: 500;
 }
 
-.body-services .card-all-services h1{
-  color:#9994ce;
+.body-services .card-all-services h1 {
+  color: #9994ce;
   font-size: 12px;
   margin-top: 5px;
   text-align: center;
@@ -369,7 +366,7 @@ body {
   color: white;
 }
 
-.social .container{
+.social .container {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -392,22 +389,40 @@ body {
   text-align: center;
 }
 
-.social .container .insta i{
+.social .container .insta i {
   font-size: 28px;
   margin: 5px;
 }
-.social .container .insta h2{
+.social .container .insta h2 {
   font-size: 28px;
   margin: 5px;
 }
 
 .carousel-social {
   display: flex;
+
+  /* ALTERAÇÕES */
+  overflow-x: auto;
+  width: 825px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  /* FIM */
 }
+
+/* ALTERAÇÕES */
+.carousel-social::-webkit-scrollbar {
+  display: none;
+}
+/* FIM */
 
 .carousel-social img {
   width: 250px;
   margin: 45px 15px;
+
+  /* ALTERAÇÕES */
+  scroll-snap-align: start;
+  /* FIM */
 }
 
 .products {
@@ -426,7 +441,7 @@ body {
   height: auto;
   max-height: 400px;
 }
-.products .body-products img{
+.products .body-products img {
   margin-bottom: 15px;
 }
 .products .body-products h1 {
@@ -442,7 +457,7 @@ body {
   width: 100%;
   object-fit: cover;
   transition: 0.3s;
-  
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -472,7 +487,6 @@ body {
   height: 480px;
   color: white;
   padding: 0 250px;
-
 }
 
 .micro .card-micro {
@@ -512,33 +526,33 @@ body {
   background: #282828;
 }
 
-.bottom-web .data-function{
+.bottom-web .data-function {
   width: 380px;
   display: flex;
   height: auto;
   margin: 55px;
 }
 
-.bottom-web .data-function .info-data{
+.bottom-web .data-function .info-data {
   margin: 0 25px;
 }
 
-.bottom-web .data-function .info-data h1{
-  color: #78D469;
+.bottom-web .data-function .info-data h1 {
+  color: #78d469;
   font-size: 25px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.bottom-web .data-function .info-data h2{
-  color: #78D469;
+.bottom-web .data-function .info-data h2 {
+  color: #78d469;
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .bottom-web .data-function .info-data h3 {
-  color: #78D469;
+  color: #78d469;
   margin-top: 15px;
   font-weight: 700;
   font-size: 16px;
@@ -552,13 +566,12 @@ body {
   font-size: 16px;
 }
 .end-page {
-  background: #78D469;
+  background: #78d469;
   width: 100%;
   height: 25px;
 }
 
-
-@media all and (max-width: 968px) {
+@media (max-width: 968px) {
   .navbar .logo {
     text-align: center;
     padding-left: 30px;
@@ -590,7 +603,7 @@ body {
     display: none;
   }
 
-  [id^=btn]:checked + ul{
+  [id^="btn"]:checked + ul {
     display: block;
   }
 
@@ -618,12 +631,12 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .card-plans .row .col{
+  .card-plans .row .col {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   .plans {
     background-size: 2500px;
   }
@@ -646,10 +659,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  /* ALTERAÇÕES */
   .carousel-social {
     display: flex;
-    flex-direction: column;
+    width: auto !important;
   }
+
+  .carousel-social img{
+    width: 100%;
+  }
+  /* FIM */
 
   .micro .card-micro {
     display: flex;
@@ -663,7 +683,6 @@ body {
     align-items: center;
     height: auto;
     width: 100%;
-    
   }
 
   .micro {
@@ -671,8 +690,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px 0;
   }
-  
+
   .micro .card-micro {
     justify-content: center;
     align-items: center;
@@ -697,6 +717,29 @@ body {
 
   .bottom-web {
     flex-direction: column;
+    padding: 0;
   }
 
+  /* ALTERAÇÕES */
+  .items h1 {
+    font-size: 50px;
+  }
+  .header-service p {
+    font-size: 22px;
+  }
+  .bottom-web .data-function {
+    width: auto !important;
+    margin: 30px 10px;
+  }
+  .bottom-web .data-function img {
+    width: 50px;
+  }
+  .products .body-products {
+    max-height: min-content;
+  }
+  .car-boss {
+    height: 400px;
+  }
+
+  /* FIM */
 }

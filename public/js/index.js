@@ -1,9 +1,11 @@
-$('.nav a[href^="#"]').on('click', function(e) {
-	e.preventDefault();
-	var id = $(this).attr('href'),
-			targetOffset = $(id).offset().top;
-			
-	$('html, body').animate({ 
-		scrollTop: targetOffset - 100
-	}, 500);
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.getElementById('carousel');
+
+  function nextImageCarousel() {
+    carousel.scrollBy(300, 0);
+  }
+
+  function previousImageCarousel() {
+    carousel.scrollBy(-300, 0);
+  }
 });
